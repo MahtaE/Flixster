@@ -51,7 +51,7 @@ public class DetailActivity extends YouTubeBaseActivity {
             @Override
             public void onSuccess(int statusCode, Headers headers, JSON json) {
                 try {
-                    JSONArray result = json.jsonObject.getJSONArray("result");
+                    JSONArray result = json.jsonObject.getJSONArray("results");
                     if (result.length() == 0){
                         return;
                     }
@@ -79,14 +79,11 @@ public class DetailActivity extends YouTubeBaseActivity {
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
                 Log.d("DetailActivity", "onInitializationSuccess");
                 youTubePlayer.cueVideo(youtubeKey);
-
-
             }
 
             @Override
             public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
-                Log.d("DetailActivity", "onInitializationSuccess");
-
+                Log.d("DetailActivity", "onInitializationFailure");
 
             }
         });
