@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     JSONArray results = jsonObject.getJSONArray("results"); //list of movies = results//when you pars the JSON, key
                                 // result may not exit, should handle the problem with try catch or throw the exception
-                    //  --we want take jsonArray and turn into list of movies not here, for being clear make it in movie(public static list<Movie>
+                               // we want take jsonArray and turn into list of movies not here, for being clear make it in movie(public static list<Movie>
                     Log.i(TAG,"Results" + results.toString());     // login into level which is  "i", pass them a tag and give
                     movies.addAll(Movie.fromJsonArray(results)); //return list of movie objects  (call it from mainActivity)
                     movieAdapter.notifyDataSetChanged();
