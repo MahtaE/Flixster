@@ -61,7 +61,7 @@ Describe any challenges encountered while building the app.
 
 
 
-<img src="<blockquote class="imgur-embed-pub" lang="en" data-id="Q2AdTjZ"><a href="https://imgur.com/Q2AdTjZ">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>gif" width=250><br>
+<img src="https://imgur.com/Q2AdTjZ.gif" width=250><br>
 
 ### Notes
 
